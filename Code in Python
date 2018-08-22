@@ -1,12 +1,19 @@
-#importing libraries and data
+#importing libraries 
 import matplotlib.pyplot as plt
 import numpy as np 
 import pandas as pd
 
-data = pd.read_json('https://data.nasa.gov/resource/2vr3-k9wn.json')
+# The urllib package provides interface for fetching data across the web
+from urllib.request import urlopen, Request
 
-#visualizing the important info: moid_au
+#read the url
+url= 'https://data.nasa.gov/resource/2vr3-k9wn.json'
+urlretrieve(url, "hazardous-object.csv")
 
+# Read file into a DataFrame and print its head
+data = pd.read_csv('hazardous-object.csv', sep=';')
+
+#Visualizing the important info: moid_au
 plt.hist(data['moid_au'])
 plt.title('Out of space objects')
 plt.show()
