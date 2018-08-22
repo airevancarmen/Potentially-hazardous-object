@@ -17,6 +17,7 @@ Present your findings to each other, including your recommended actions based on
 DATA 
 Taken from https://data.nasa.gov/resource/2vr3-k9wn.json
 Variables: 
+
 {"designation":"419880 (2011 AH37)",
 "discovery_date":"2011-01-07T00:00:00.000",
 "h_mag":"19.7", Magnetic field or absolute magnitude? 
