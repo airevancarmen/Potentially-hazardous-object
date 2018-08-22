@@ -2,6 +2,7 @@
 import matplotlib.pyplot as plt
 import numpy as np 
 import pandas as pd
+import json
 
 # The urllib package provides interface for fetching data across the web
 from urllib.request import urlopen, Request
@@ -10,7 +11,7 @@ from urllib.request import urlopen, Request
 url= 'https://data.nasa.gov/resource/2vr3-k9wn.json'
 urlretrieve(url, "hazardous-object.csv")
 
-# Read file into a DataFrame and print its head
+# Read file into a DataFrame
 data = pd.read_csv('hazardous-object.csv', sep=';')
 
 #Visualizing the important info: moid_au
