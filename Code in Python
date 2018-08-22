@@ -16,7 +16,10 @@ data= r.json()
 
 # print(data) to check 
 
-#The variable moid_au 9Minimum orbit intersection distance) defines if an object is potentially dangerous. Risk AU < 0.05 AU. AU=Astronomical units
+#The variable moid_au is the minimum orbit intersection distance. 
+# moid_au defines if an object is potentially dangerous. Risk AU < 0.05 AU. AU=Astronomical units
+
+#First thing to do is to visualize the data
 plt.hist(data['moid_au'])
 plt.title('Out of space objects')
 plt.show()
