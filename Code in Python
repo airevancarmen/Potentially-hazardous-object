@@ -2,7 +2,7 @@
 import matplotlib.pyplot as plt
 import numpy as np 
 
-data = pd.read_csv('https://data.nasa.gov/resource/2vr3-k9wn.json')
+data = pd.read_json('https://data.nasa.gov/resource/2vr3-k9wn.json')
 
 #visualizing the important info: moid_au
 
