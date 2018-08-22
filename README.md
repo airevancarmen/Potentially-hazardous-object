@@ -41,6 +41,7 @@ Variables:
 DEFINITION (Wikipedia)
 Potentially hazardous asteroids (PHAs) are defined as having a minimum orbital intersection distance with Earth of less than 0.05 astronomical units (19.5 lunar distances) and an absolute magnitude of 22 or brighter. As of January 2018 there are 1,885 known PHAs (about 11% of the total near-Earth population), of which 157 are estimated to be larger than one kilometer in diameter (see list of largest PHAs below).Most of the discovered PHAs are Apollo asteroids (1,601) and fewer belong to the group of Aten asteroids (169).
 
-
+SOLUTION 
+Take the moid_au column and visualize it with a histogram. In this way we can observe how many objects cross the risk threshold. 
 
 
