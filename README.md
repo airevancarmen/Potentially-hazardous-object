@@ -1,8 +1,7 @@
 # Potentially-hazardous-object
 
 Workshop 1: 
-Are we safe?
-1) Chose ONE dimension of this data-set of near-earth objects to estimate how safe we really are. To do this you will:
+Are we safe? Chose one dimension of this data-set of near-earth objects to estimate how safe we really are. To do this you will:
 
 TASKS 
 1) Question the data.
