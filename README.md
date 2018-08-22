@@ -19,14 +19,23 @@ Taken from https://data.nasa.gov/resource/2vr3-k9wn.json
 Variables: 
 
 {"designation":"419880 (2011 AH37)",
+
 "discovery_date":"2011-01-07T00:00:00.000",
+
 "h_mag":"19.7", Magnetic field or absolute magnitude? 
+
 "i_deg":"9.65", Inclination degree. It is the angle between the orbital plane and the plane of reference, the Earth in this case.
+
 "moid_au":"0.035", Minimum orbit intersection distance. Risk AU < 0.05 AU. 
+
 "orbit_class":"Apollo",
+
 "period_yr":"4.06",
+
 "pha":"Y", phase.
+
 "q_au_1":"0.84",
+
 "q_au_2":"4.26"}
 
 DEFINITION (Wikipedia)
