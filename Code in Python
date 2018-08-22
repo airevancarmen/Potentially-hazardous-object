@@ -3,18 +3,20 @@ import matplotlib.pyplot as plt
 import numpy as np 
 import pandas as pd
 import json
+import requests
 
-# The urllib package provides interface for fetching data across the web
-from urllib.request import urlopen, Request
-
-#read the url
+#data url
 url= 'https://data.nasa.gov/resource/2vr3-k9wn.json'
-urlretrieve(url, "hazardous-object.csv")
 
-# Read file into a DataFrame
-data = pd.read_csv('hazardous-object.csv', sep=';')
+# Package the request, send the request and catch the response: r
+r = requests.get(url)
 
-#Visualizing the important info: moid_au
+# Decode the JSON data into a dictionary: json_data
+data= r.json()
+
+# print(data) to check 
+
+#The variable moid_au 9Minimum orbit intersection distance) defines if an object is potentially dangerous. Risk AU < 0.05 AU. AU=Astronomical units
 plt.hist(data['moid_au'])
 plt.title('Out of space objects')
 plt.show()
