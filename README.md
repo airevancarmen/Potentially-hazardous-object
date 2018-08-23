@@ -22,7 +22,7 @@ Variables:
 
 "discovery_date":"2011-01-07T00:00:00.000",
 
-"h_mag":"19.7", Magnetic field or absolute magnitude? 
+"h_mag":"19.7", Absolute magnitude. Risk >= 22 .
 
 "i_deg":"9.65", Inclination degree. It is the angle between the orbital plane and the plane of reference, the Earth in this case.
 
@@ -44,6 +44,6 @@ Potentially hazardous asteroids (PHAs) are defined as having a minimum orbital i
 
 SOLUTION 
 
-Take the moid_au column and visualize it with a histogram. In this way we can observe how many objects cross the risk threshold. 
+Take the moid_au column and do a simple exploratory data analysis with a histogram. In this way we can observe how many objects cross the risk threshold. Later we will select those with moid_au<0.05 and h_mag >= 22.
 
 
