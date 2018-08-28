@@ -21,19 +21,23 @@ df = pd.DataFrame.from_dict(data, orient=‘columns’)
 
 #selecting the variable of interest. The variable moid_au is the minimum orbit intersection distance. moid_au defines if an object is potentially dangerous. Risk AU < 0.05 AU. AU=Astronomical units
 moi= df['moid_au']
-hmag = df['hmag']
+hmag = df['h_mag']
 
+#This code does not work: 
+df = df[ (df['h_mag'] > 22) & (df['moid_au'] < 0.05)]
+print(df)
+
+
+
+
+
+#Other stuff starts here> 
 #df_pop_ceb = df_urb_pop[df_urb_pop['CountryCode'] == 'CEB']
 #gapminder_2002 = gapminder[gapminder['year']==2002]
-
 moirisk = df[df['moid_au']<= 0.05]
-
 for item in moi:
     print(item['moid_au']
  if item['moid_au'] <0.05 ;
-
-
-
 #First thing to do is to visualize the data
 #plt.hist(data['moid_au'])
 #plt.title('Out of space objects')
