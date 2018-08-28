@@ -27,6 +27,9 @@ hmag = df['h_mag']
 df = df[ (df['h_mag'] > 22) & (df['moid_au'] < 0.05)]
 print(df)
 
+#neither 
+moidau = [d['moid_au']<0.05 for d in data]
+print(moidau)
 
 
 
