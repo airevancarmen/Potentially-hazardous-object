@@ -23,6 +23,8 @@ df = pd.DataFrame.from_dict(data, orient=‘columns’)
 moi= df['moid_au']
 hmag = df['h_mag']
 
+#Till here it works
+
 #This code does not work: 
 df = df[ (df['h_mag'] > 22) & (df['moid_au'] < 0.05)]
 print(df)
