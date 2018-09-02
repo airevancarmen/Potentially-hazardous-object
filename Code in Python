@@ -17,7 +17,10 @@ data= r.json()
 # print(data) to check 
 
 #create a dataframe from a json : df
-df = pd.DataFrame.from_dict(data, orient=‘columns’)
+df1 = pd.DataFrame.from_dict(data, orient=‘columns’)
+
+#drop the rows where at least one element is missing
+df = df1.dropna()
 
 #selecting the variable of interest. The variable moid_au is the minimum orbit intersection distance. moid_au defines if an object is potentially dangerous. Risk AU < 0.05 AU. AU=Astronomical units
 moi= df['moid_au']
