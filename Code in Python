@@ -26,7 +26,7 @@ df = df1.dropna()
 moi= df['moid_au']
 hmag = df['h_mag']
 
-#weird histogram with pics
+#weird histogram with peaks
 plt.hist(data['moid_au'], bins=0, 0.1, 0.3, 0.5, 10)
 
 #Till here it works
