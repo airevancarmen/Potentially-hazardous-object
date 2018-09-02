@@ -45,5 +45,6 @@ Potentially hazardous asteroids (PHAs) are defined as having a minimum orbital i
 SOLUTION 
 
 Take the moid_au column and do a simple exploratory data analysis with a histogram. In this way we can observe how many objects cross the risk threshold. Later we will select those with moid_au<0.05 and h_mag >= 22.
+The Poisson distribution may be useful to model events such as the number of meteorites greater than 1 meter diameter that strike Earth in a year.
 
 
