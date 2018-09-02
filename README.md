@@ -6,8 +6,7 @@ Are we safe? Chose one dimension of this data-set of near-earth objects to estim
 TASKS 
 1) Question the data.
 2) Determine which single dimension of data is most relevant to this question.
-3) Establish safety thresholds:
-ie. Is 1000 objects within 1000 miles a meaningful danger threshold?
+3) Establish safety thresholds: ie. Is 1000 objects within 1000 miles a meaningful danger threshold?
 4) Clean the dataset down to only that dimension.
 5) Do basic pre-analysis data visualization.
 6) Run the cleaned data set through your std module.
@@ -17,21 +16,13 @@ Present your findings to each other, including your recommended actions based on
 DATA 
 Taken from https://data.nasa.gov/resource/2vr3-k9wn.json
 Variables: 
-
 {"designation":"419880 (2011 AH37)",
-
 "discovery_date":"2011-01-07T00:00:00.000",
-
 "h_mag":"19.7", Absolute magnitude. Risk >= 22 .
-
 "i_deg":"9.65", Inclination degree. It is the angle between the orbital plane and the plane of reference, the Earth in this case.
-
 "moid_au":"0.035", Minimum orbit intersection distance. Risk AU < 0.05 AU. 
-
 "orbit_class":"Apollo",
-
 "period_yr":"4.06",
-
 "pha":"Y", phase.
 
 "q_au_1":"0.84",
