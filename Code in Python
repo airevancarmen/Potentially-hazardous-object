@@ -17,7 +17,7 @@ data= r.json()
 # print(data) to check 
 
 #create a dataframe from a json : df
-df1 = pd.DataFrame.from_dict(data, orient=‘columns’)
+df1 = pd.DataFrame.from_dict(data, orient='columns')
 
 #drop the rows where at least one element is missing
 df = df1.dropna()
@@ -26,7 +26,7 @@ df = df1.dropna()
 moi= df['moid_au']
 hmag = df['h_mag']
 
-#weird histogram with peaks
+#weird histogram with peaks. 
 plt.hist(data['moid_au'], bins=0, 0.1, 0.3, 0.5, 10)
 
 #Till here it works
