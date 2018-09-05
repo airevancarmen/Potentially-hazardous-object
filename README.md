@@ -1,15 +1,8 @@
 # Potentially-hazardous-object
 
 Workshop 1: 
-Are we safe? Chose one dimension of this data-set of near-earth objects to estimate how safe we really are. To do this you will:
+Are we safe? Chose one dimension of this data-set of near-earth objects to estimate how safe we really are.  
 
-TASKS 
-1) Question the data.
-2) Determine which single dimension of data is most relevant to this question.
-3) Establish safety thresholds: ie. Is 1000 objects within 1000 miles a meaningful danger threshold?
-4) Clean the dataset down to only that dimension.
-5) Do basic pre-analysis data visualization.
-6) Run the cleaned data set through your std module.
 Try to make an inference about the total population of near-earth objects based on your measurements.
 Present your findings to each other, including your recommended actions based on your conclusions.
 
