@@ -20,11 +20,21 @@ data= r.json()
 df1 = pd.DataFrame.from_dict(data, orient='columns')
 
 #drop the rows where at least one element is missing
-df = df1.dropna()
+clean = df.dropna()
 
+print(len(clean))
 #selecting the variable of interest. The variable moid_au is the minimum orbit intersection distance. moid_au defines if an object is potentially dangerous. Risk AU < 0.05 AU. AU=Astronomical units
-moi= df['moid_au']
-hmag = df['h_mag']
+
+newdf = clean[['moid_au', 'h_mag']]
+
+#I don´t get why it shows me a string. I´m still not familiar with the json.
+newdf['moid_au'] = [float(i) for i in newdf['moid_au']]
+newdf['h_mag'] = [float(i) for i in newdf['h_mag']]
+
+#wanted dataframe
+print(newdf.loc[(newdf['moid_au'] < 0.05) & (newdf['h_mag'] > 22.00) ].count())
+
+
 
 #weird histogram with peaks. 
 plt.hist(data['moid_au'], bins=0, 0.1, 0.3, 0.5, 10)
