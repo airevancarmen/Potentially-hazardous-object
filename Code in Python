@@ -35,32 +35,12 @@ newdf['h_mag'] = [float(i) for i in newdf['h_mag']]
 print(newdf.loc[(newdf['moid_au'] < 0.05) & (newdf['h_mag'] > 22.00) ].count())
 
 
+ 
 
-#weird histogram with peaks. 
-plt.hist(data['moid_au'], bins=0, 0.1, 0.3, 0.5, 10)
-
-#Till here it works
-
-#This code does not work: 
-df = df[ (df['h_mag'] > 22) & (df['moid_au'] < 0.05)]
-print(df)
-
-#neither 
-moidau = [d['moid_au']<0.05 for d in data]
-print(moidau)
-
-#neither
-moirisk = df[df['moid_au']<= 0.05]
-
-
-#Dirty stuff starts here> 
+#notes of dataframe filters that work
 #df_pop_ceb = df_urb_pop[df_urb_pop['CountryCode'] == 'CEB']
 #gapminder_2002 = gapminder[gapminder['year']==2002]
 
 for item in moi:
     print(item['moid_au']
  if item['moid_au'] <0.05 ;
-#First thing to do is to visualize the data
-#plt.hist(data['moid_au'])
-#plt.title('Out of space objects')
-#plt.show()
