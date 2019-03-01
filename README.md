@@ -1,6 +1,6 @@
-# Potentially-hazardous-object
+### Very first github and python notebook
 
-Workshop 1: 
+
 Are we safe? Chose one dimension of this data-set of near-earth objects to estimate how safe we really are.  
 
 Try to make an inference about the total population of near-earth objects based on your measurements.
