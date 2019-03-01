@@ -1,34 +1,12 @@
 ### Very first github and python notebook
 
 
-Are we safe? Chose one dimension of this data-set of near-earth objects to estimate how safe we really are.  
+Are we safe? 
 
-Try to make an inference about the total population of near-earth objects based on your measurements.
-Present your findings to each other, including your recommended actions based on your conclusions.
-
-DATA 
-Taken from https://data.nasa.gov/resource/2vr3-k9wn.json
-Variables: 
-
-{"designation":"419880 (2011 AH37)",
-
-"discovery_date":"2011-01-07T00:00:00.000",
-
-"h_mag":"19.7", Absolute magnitude. Risk >= 22 
-
-"i_deg":"9.65", Inclination degree. It is the angle between the orbital plane and the plane of reference, the Earth in this case.
-
-"moid_au":"0.035", Minimum orbit intersection distance. Risk AU < 0.05 AU. 
-
-"orbit_class":"Apollo",
-
-"period_yr":"4.06",
-
-"pha":"Y", phase.
-
-"q_au_1":"0.84",
-
-"q_au_2":"4.26"}
+Task:
+- Chose one dimension of this data-set of near-earth objects to estimate how safe we really are.  
+- Try to make an inference about the total population of near-earth objects based on your measurements.
+- Present your findings to each other, including your recommended actions based on your conclusions.
 
 DEFINITION (Wikipedia)
 
@@ -38,5 +16,3 @@ SOLUTION
 
 Take the moid_au column and do a simple exploratory data analysis with a histogram. In this way we can observe how many objects cross the risk threshold. Later we will select those with moid_au<0.05 and h_mag >= 22.
 The Poisson distribution may be useful to model events such as the number of meteorites greater than 1 meter diameter that strike Earth in a year.
-
-
